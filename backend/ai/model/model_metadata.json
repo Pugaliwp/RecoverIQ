@@ -1,0 +1,67 @@
+{
+  "model_name": "Logistic Regression",
+  "training_date": "2026-08-31T16:42:23.367800",
+  "dataset_size": 20000,
+  "feature_names": [
+    "amount",
+    "retry_count",
+    "customer_success_rate",
+    "previous_transaction_count",
+    "previous_failed_count",
+    "hour_of_day",
+    "day_of_week",
+    "is_subscription",
+    "days_since_last_payment",
+    "customer_tenure_days",
+    "payment_attempt_number",
+    "is_first_payment",
+    "customer_avg_transaction_amount",
+    "amount_vs_customer_average",
+    "payment_method",
+    "failure_reason"
+  ],
+  "target_name": "recovered",
+  "train_size": 14000,
+  "val_size": 3000,
+  "test_size": 3000,
+  "validation_metrics": {
+    "roc_auc": 0.8707606334841629,
+    "pr_auc": 0.8298931482070728,
+    "accuracy": 0.7943333333333333,
+    "precision": 0.7801476620180475,
+    "recall": 0.7315384615384616,
+    "f1": 0.7550615323541088,
+    "brier_score": 0.1435950271356492,
+    "confusion_matrix": [
+      [
+        1432,
+        268
+      ],
+      [
+        349,
+        951
+      ]
+    ]
+  },
+  "test_metrics": {
+    "roc_auc": 0.8592461538461538,
+    "pr_auc": 0.8211037741171014,
+    "accuracy": 0.7843333333333333,
+    "precision": 0.771856786011657,
+    "recall": 0.713076923076923,
+    "f1": 0.7413034786085566,
+    "brier_score": 0.15065679746000973,
+    "confusion_matrix": [
+      [
+        1426,
+        274
+      ],
+      [
+        373,
+        927
+      ]
+    ]
+  },
+  "random_seed": 42,
+  "model_version": "1.0.0"
+}
